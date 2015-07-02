@@ -22,11 +22,11 @@ header img{
 nav{
 	background-color: black;
 	height: 80px;
-	margin: 0 auto;
 	position: fixed;
 	width: 100%;
 	z-index: 2;
 	opacity: 0.8;
+	display: inline-block;
 }
 
 span{
@@ -261,10 +261,6 @@ height: auto;
 /*Medias*/
 
 	@media(min-width: 768px) and (max-width: 979px){
-	header img{
-		height: 50%;
-
-	}
 	header{
 		height: auto;
 	}
@@ -272,10 +268,8 @@ height: auto;
 	.articulo{
 	width: 100%;
 	height: 560px;
-	
 	position: relative;
 	border-bottom: 2px solid #1BB580;
-
 }
 
 .articulo img {
@@ -292,11 +286,6 @@ float: left;
 	float: left;
 	margin-top:130px;
 	margin-left: 24px;
-	
-	
-
-
-	
 }
 
 .texto h2{
@@ -312,13 +301,12 @@ float: left;
 	
 }
 
+header img{
+	margin-bottom: -4px;
+}
 	}
 
 	@media(max-width: 767px){
-	header img{
-		height: 50%;
-
-	}
 	header{
 		height: auto;
 	}
@@ -328,7 +316,6 @@ float: left;
 	height: 450px;
 	position: relative;
 	border-bottom: 2px solid #1BB580;
-
 }
 
 .articulo img {
@@ -344,12 +331,7 @@ float: left;
 	width: 44%;	
 	float: left;
 	margin-top:106px;
-	margin-left: 24px;
-	
-	
-
-
-	
+	margin-left: 24px;	
 }
 
 .texto h2{
@@ -365,9 +347,14 @@ float: left;
 	
 }
 
+header img{
+	height: 50%;
+	margin-bottom: -4px;
+}
+
 	}
 
-	@media(max-width: 480px){
+@media(max-width: 480px){
 	ul{
 		margin:0;
 		padding: 0;
@@ -391,7 +378,7 @@ float: left;
 	}
 
 	.menu p{
-		text-align: center !important;
+		text-align: center;
 		color:red;
 	}
 
@@ -410,7 +397,6 @@ float: left;
 	width: 100%;
 	height: auto;
 	height: 560px;
-	position: absolute;
 	border-bottom: 2px solid #1BB580;
 
 }
@@ -453,7 +439,16 @@ margin-top:29px;
 	
 }
 
-	}
+header img{
+	margin-bottom: -10px;
+}
+
+nav{
+	height: 70px;
+	position: absolute;
+}
+
+}
 
 
 
