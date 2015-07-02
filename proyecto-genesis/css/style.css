@@ -60,7 +60,7 @@ nav ul li a:hover{
 	color:#1BB580;
 	font-size: 30px;
 	text-decoration:none;
-	margin-right: 100px;
+	
 }
 /*fonts*/
 
@@ -91,43 +91,32 @@ text-align: center;
 
 .menu p{
 	color: #333333;
+	text-align: center;
 }
 
-.menu ul li p {
+.menu ul li a {
+	text-decoration: none;
 	margin-top: 179px;
 	color:#333333;
 }
 
-.circulo1{
-	 width: 170px;
-     height: 170px;
-     border-radius: 50%;
-     background-image:url('http://definicion.de/wp-content/uploads/2010/03/tradicion.jpg');
-     position: relative;
+.circulo{
+	width: 170px;
+	height: 170px;
+	border: 2px solid #1BB580;
+    border-radius: 50%;
+    position: relative;
 }
 
-.circulo2{
-	 width: 170px;
-     height: 170px;
-     border-radius: 50%;
-     background-image:url('http://www.formulamexicana.com/uploads/2012/08/PAELLAMEXICANA2.jpg');
-     position: relative;
-}
-
-.circulo3{
-	 width: 170px;
-     height: 170px;
-     border-radius: 50%;
-     background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Angel_de_la_Independencia_Mexico_City.jpg/250px-Angel_de_la_Independencia_Mexico_City.jpg');
-     position: relative;
+.circulo:hover{
+	 box-shadow: 2px 2px 5px #1BB580;
 }
 
 .menu h2{
 	margin:0;
-	font-family: 'Noto Sans', sans-serif;
 	color: #1BB580;
-
 }
+
 
 /*Articulos*/
 
@@ -137,6 +126,10 @@ text-align: center;
 	background-color: white;
 	position: relative;
 	border-bottom: 2px solid #1BB580;
+}
+
+.articulo:last-child{
+	border-bottom: none;
 }
 
 .articulo img {
@@ -215,64 +208,114 @@ height: auto;
 	margin-left: 50px;
 }	
 
+/*footer*/
+.global-footer{
+  background-color: #4A5155;
+  color: #9C9EA1;  
+  padding: 20px;
+  text-align: justify;
+  height: 250px;
+  font-weight: 100;
+ 
+}
+
+.global-footer h2{
+	font-weight: 300;
+
+}
+
+.contactanos{
+	margin-right: 50px;
+	width: 25%;	
+	float: left;
+	
+}
+.acercade{
+    margin-right: 50px;
+	width: 25%;
+	float: left;	
+}
+.siguenos{
+	float: left;
+	margin-right: 50px;
+}
+
+#redes{
+
+	width: 50px;
+}
+
+.copyright h2{
+	margin-top: 20px;
+	font-size: 14px;
+}
+
 
 /*Medias*/
 
 	@media(min-width: 768px) and (max-width: 979px){
-
-	}
-
-	@media(max-width: 767px){
-
-	}
-
-	@media(max-width: 480px){
-	
-
-ul{
-	margin: 0;
-}
 	header img{
 		height: 50%;
 
 	}
-
-	.menu{
+	header{
 		height: auto;
 	}
 
-	.menu ul li p {
-	margin-top: 70px;
-	color:#333333;
+	}
+
+	@media(max-width: 767px){
+	header img{
+		height: 50%;
+
+	}
+	header{
+		height: auto;
+	}
+
+	}
+
+	@media(max-width: 480px){
+	ul{
+		margin:0;
+		padding: 0;
+		list-style: none;
+	}
+
+	
+
+	.menu{
+		margin: 0;
+		padding: 0;
+		height: auto;
+		position: relative;
+		text-align: center;
+	}
+	
+	.menu ul li{
+		padding: 0;
+		margin-right: 0;
+		margin-top: 30px;
+	}
+
+	.menu p{
+		text-align: center !important;
+		color:red;
+	}
+
+	nav ul li a{
+	color:white;
+	line-height: 80px;
+	margin-right: 10px;
+	text-decoration: none;
 }
 
-.menu ul li {
-	margin-top: 20px;
-	text-align: center;
+.logo{
+	margin-left: 10px;
 }
-	.circulo1{
-	 width: 70px;
-     height: 70px;
-     border-radius: 50%;
-     background-image:url('http://www.formulamexicana.com/uploads/2012/08/PAELLAMEXICANA2.jpg');
-     position: relative;
-	}
 
-	.circulo2{
-	 width: 70px;
-     height: 70px;
-     border-radius: 50%;
-     background-image:url('http://www.formulamexicana.com/uploads/2012/08/PAELLAMEXICANA2.jpg');
-     position: relative;
-	}
+	
 
-	.circulo3{
-	 width: 70px;
-     height: 70px;
-     border-radius: 50%;
-     background-image:url('http://www.formulamexicana.com/uploads/2012/08/PAELLAMEXICANA2.jpg');
-     position: relative;
-	}
 	}
 
 
